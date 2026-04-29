@@ -2,7 +2,19 @@
 
 **RoleLens** is an AI-powered resume analysis platform that helps both job seekers and recruiters make smarter decisions — faster.
 
-Built with **Next.js 16**, **Google Gemini AI**, and a clean glassmorphism UI.
+<img width="1883" height="890" alt="Screenshot 2026-04-29 102432" src="https://github.com/user-attachments/assets/1a8851e7-15da-43e1-a364-0f030543c000" />
+<img width="1851" height="887" alt="Screenshot 2026-04-29 104857" src="https://github.com/user-attachments/assets/16f933a6-291a-49c7-97ec-3a0f12a3535e" />
+<img width="1825" height="890" alt="Screenshot 2026-04-29 104749" src="https://github.com/user-attachments/assets/dd7b387e-8f8f-47b0-841a-829593ae96bb" />
+<img width="1855" height="760" alt="Screenshot 2026-04-29 104759" src="https://github.com/user-attachments/assets/9cb9ee0d-4ffc-43f2-bcb1-b65a40986024" />
+<img width="1839" height="843" alt="Screenshot 2026-04-29 104807" src="https://github.com/user-attachments/assets/fb397d80-073d-4aaf-9dbd-929e5d839e3d" />
+<img width="1832" height="542" alt="Screenshot 2026-04-29 104816" src="https://github.com/user-attachments/assets/31a1ef7d-dcc8-4a55-ad38-bf1363ce9863" />
+
+
+
+
+
+
+
 
 ---
 
