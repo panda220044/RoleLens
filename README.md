@@ -36,7 +36,7 @@ No setup needed — open the link and start analyzing resumes instantly.
 ---
 
 ## 📸 Screenshots
-<img width="1891" height="832" alt="Screenshot 2026-05-21 233530" src="https://github.com/user-attachments/assets/6303c5ee-738a-44a4-b677-3931d7776f40" />
+
 
 <img width="1880" height="859" alt="Screenshot 2026-05-21 232647" src="https://github.com/user-attachments/assets/9569643a-765d-4605-9e63-2536b7a312a4" />
 
