@@ -36,25 +36,8 @@ No setup needed — open the link and start analyzing resumes instantly.
 
 ## 📸 Screenshots
 
-### Landing Page — Portal Selection
-<!-- Add screenshot here: landing page showing Student & Recruiter portals -->
-> *Screenshot coming soon*
+<img width="1891" height="825" alt="Screenshot 2026-05-21 233105" src="https://github.com/user-attachments/assets/e8b16def-60cc-4ee6-858f-e5cae0e19e59" />
 
-### 🎓 Student Portal — Resume Upload
-<!-- Add screenshot here: student portal with PDF upload and job description -->
-> *Screenshot coming soon*
-
-### 🎓 Student Portal — Analysis Results
-<!-- Add screenshot here: results view showing score, matched/missing skills, action plan -->
-> *Screenshot coming soon*
-
-### 🏢 Recruiter Portal — Candidate Upload
-<!-- Add screenshot here: recruiter drag & drop upload area with multiple resumes -->
-> *Screenshot coming soon*
-
-### 🏢 Recruiter Portal — Ranked Leaderboard
-<!-- Add screenshot here: ranked leaderboard showing all candidates with scores -->
-> *Screenshot coming soon*
 
 ---
 
