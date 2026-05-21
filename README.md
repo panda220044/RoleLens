@@ -1,3 +1,4 @@
+<img width="1880" height="859" alt="Screenshot 2026-05-21 232647" src="https://github.com/user-attachments/assets/f7177378-d263-4562-a403-1980e234b299" />
 # 🔍 RoleLens
 
 **RoleLens** is an AI-powered resume analysis platform that helps both job seekers and recruiters make smarter decisions — faster.
@@ -35,8 +36,26 @@ No setup needed — open the link and start analyzing resumes instantly.
 ---
 
 ## 📸 Screenshots
+<img width="1891" height="832" alt="Screenshot 2026-05-21 233530" src="https://github.com/user-attachments/assets/6303c5ee-738a-44a4-b677-3931d7776f40" />
 
-<img width="1891" height="825" alt="Screenshot 2026-05-21 233105" src="https://github.com/user-attachments/assets/e8b16def-60cc-4ee6-858f-e5cae0e19e59" />
+<img width="1880" height="859" alt="Screenshot 2026-05-21 232647" src="https://github.com/user-attachments/assets/9569643a-765d-4605-9e63-2536b7a312a4" />
+
+<img width="1252" height="832" alt="Screenshot 2026-05-21 232748" src="https://github.com/user-attachments/assets/cef3736b-21d5-4e92-ac75-64fbb4d41fec" />
+<img width="1833" height="728" alt="Screenshot 2026-05-21 232850" src="https://github.com/user-attachments/assets/038767fe-a678-4f29-a6f0-35bd8f05e564" />
+<img width="1838" height="764" alt="Screenshot 2026-05-21 232859" src="https://github.com/user-attachments/assets/b51d2548-b6cd-42fb-b676-cda47b7bb09a" />
+<img width="1863" height="541" alt="Screenshot 2026-05-21 232907" src="https://github.com/user-attachments/assets/bd96d933-659a-475d-845f-d9d4593a0ade" />
+<img width="1869" height="829" alt="Screenshot 2026-05-21 233017" src="https://github.com/user-attachments/assets/655eaf4c-98ec-4f25-98a6-3783601060c0" />
+
+
+<img width="1891" height="825" alt="Screenshot 2026-05-21 233105" src="https://github.com/user-attachments/assets/ae613c3b-a72e-4258-b911-58d6a235c34f" />
+
+
+
+
+
+
+
+
 
 
 ---
