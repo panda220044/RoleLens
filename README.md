@@ -2,26 +2,18 @@
 
 **RoleLens** is an AI-powered resume analysis platform that helps both job seekers and recruiters make smarter decisions — faster.
 
-<img width="1883" height="890" alt="Screenshot 2026-04-29 102432" src="https://github.com/user-attachments/assets/1a8851e7-15da-43e1-a364-0f030543c000" />
-<img width="1851" height="887" alt="Screenshot 2026-04-29 104857" src="https://github.com/user-attachments/assets/98f7d341-ed6c-4eb8-951f-5bb9acf19a93" />
-<img width="1851" height="887" alt="Screenshot 2026-04-29 104857" src="https://github.com/user-attachments/assets/16f933a6-291a-49c7-97ec-3a0f12a3535e" />
-<img width="1825" height="890" alt="Screenshot 2026-04-29 104749" src="https://github.com/user-attachments/assets/dd7b387e-8f8f-47b0-841a-829593ae96bb" />
-<img width="1855" height="760" alt="Screenshot 2026-04-29 104759" src="https://github.com/user-attachments/assets/9cb9ee0d-4ffc-43f2-bcb1-b65a40986024" />
-<img width="1839" height="843" alt="Screenshot 2026-04-29 104807" src="https://github.com/user-attachments/assets/fb397d80-073d-4aaf-9dbd-929e5d839e3d" />
-<img width="1832" height="542" alt="Screenshot 2026-04-29 104816" src="https://github.com/user-attachments/assets/31a1ef7d-dcc8-4a55-ad38-bf1363ce9863" />
-<img width="1850" height="900" alt="Screenshot 2026-04-29 102931" src="https://github.com/user-attachments/assets/b0688daf-8539-4e14-a25b-257f245c47ac" />
-<img width="1864" height="897" alt="Screenshot 2026-04-29 104342" src="https://github.com/user-attachments/assets/d75853b5-68af-491d-9ca2-952b43b69cf0" />
-<img width="1856" height="738" alt="Screenshot 2026-04-29 104350" src="https://github.com/user-attachments/assets/87f9eb30-fe14-4028-b5c9-e9237c5917b9" />
-<img width="1725" height="852" alt="Screenshot 2026-04-29 104405" src="https://github.com/user-attachments/assets/a8737079-9e56-4650-a29e-c0fb0a20feff" />
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-role--lens.vercel.app-black?style=for-the-badge&logo=vercel)](https://role-lens.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![Gemini AI](https://img.shields.io/badge/Gemini-2.5%20Flash-blue?style=for-the-badge&logo=google)](https://aistudio.google.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
+---
 
+## 🌐 Live Demo
 
+> 🚀 **[https://role-lens.vercel.app](https://role-lens.vercel.app)**
 
-
-
-
-
-
+No setup needed — open the link and start analyzing resumes instantly.
 
 ---
 
@@ -32,12 +24,37 @@
 - Get an instant **AI-generated match score** (0–100%)
 - See **matched skills**, **missing skills**, and **actionable feedback**
 - Receive a personalized **action plan** to improve your chances
+- Smart **semantic skill mapping** — understands acronyms, synonyms & implied skills
 
 ### 🏢 Recruiter Portal
 - Upload **multiple candidate resumes** at once (drag & drop)
 - Batch analyze all candidates against a single job description
 - View an **auto-ranked leaderboard** sorted by match score
-- Click any candidate to see their full detailed report
+- Click any candidate to see their full detailed breakdown
+
+---
+
+## 📸 Screenshots
+
+### Landing Page — Portal Selection
+<!-- Add screenshot here: landing page showing Student & Recruiter portals -->
+> *Screenshot coming soon*
+
+### 🎓 Student Portal — Resume Upload
+<!-- Add screenshot here: student portal with PDF upload and job description -->
+> *Screenshot coming soon*
+
+### 🎓 Student Portal — Analysis Results
+<!-- Add screenshot here: results view showing score, matched/missing skills, action plan -->
+> *Screenshot coming soon*
+
+### 🏢 Recruiter Portal — Candidate Upload
+<!-- Add screenshot here: recruiter drag & drop upload area with multiple resumes -->
+> *Screenshot coming soon*
+
+### 🏢 Recruiter Portal — Ranked Leaderboard
+<!-- Add screenshot here: ranked leaderboard showing all candidates with scores -->
+> *Screenshot coming soon*
 
 ---
 
@@ -51,10 +68,11 @@
 | Animations | Framer Motion |
 | Icons | Lucide React |
 | Styling | Vanilla CSS + Glassmorphism |
+| Deployment | Vercel |
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Getting Started (Local Development)
 
 ### 1. Clone the repo
 ```bash
@@ -82,6 +100,16 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+---
+
+## ☁️ Deploy Your Own
+
+Deploy instantly to Vercel with one click:
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/panda220044/RoleLens&env=GEMINI_API_KEY&envDescription=Your%20Google%20Gemini%20API%20Key&envLink=https://aistudio.google.com/apikey)
+
+Then add your `GEMINI_API_KEY` in the Vercel project settings under **Environment Variables**.
 
 ---
 
