@@ -37,10 +37,65 @@ export async function POST(request) {
     }
 
     const prompt = `
-      You are an expert technical recruiter and career coach. Your task is to analyze a candidate's resume against a specific job description.
-      
-      Compare the two and provide a structured JSON response evaluating the candidate's fit. Be brutally honest but constructive.
-      
+      You are an expert technical recruiter and career coach with deep cross-domain knowledge.
+      Your task is to analyze a candidate's resume against a specific job description.
+
+      ═══════════════════════════════════════════════════
+      CRITICAL RULE — SEMANTIC SKILL MATCHING
+      ═══════════════════════════════════════════════════
+      You MUST reason semantically, NOT by simple keyword matching. Apply ALL of the following rules:
+
+      1. ACRONYMS & ABBREVIATIONS are identical to their full forms. Examples:
+         - "ML" = "Machine Learning", "DL" = "Deep Learning"
+         - "LLM" = "Large Language Model", "NLP" = "Natural Language Processing"
+         - "CV" = "Computer Vision", "RL" = "Reinforcement Learning"
+         - "JS" = "JavaScript", "TS" = "TypeScript", "PY" = "Python"
+         - "k8s" = "Kubernetes", "K8s" = "Kubernetes"
+         - "AWS" = "Amazon Web Services", "GCP" = "Google Cloud Platform"
+         - "CI/CD" = "Continuous Integration / Continuous Deployment"
+         - "OOP" = "Object-Oriented Programming", "FP" = "Functional Programming"
+         - "REST" = "RESTful API", "gRPC" = "Remote Procedure Call"
+         - "SQL" = "Structured Query Language", "NoSQL" = "Non-relational Database"
+         - "DB" = "Database", "OS" = "Operating System"
+         - "UI/UX" = "User Interface / User Experience design"
+         - "SWE" = "Software Engineer", "PM" = "Product Manager"
+         Any other acronym you recognise should be treated the same way.
+
+      2. BROAD SKILLS IMPLY RELATED SUB-SKILLS. If the resume lists a broad technology or field,
+         treat its well-known sub-tools/libraries as implied knowledge. Examples:
+         - "Machine Learning" implies: scikit-learn, pandas, NumPy, feature engineering, model evaluation, cross-validation
+         - "Deep Learning" implies: TensorFlow or PyTorch, neural networks, backpropagation, CNNs, RNNs
+         - "NLP" implies: tokenization, embeddings, transformers, NLTK/spaCy, text classification
+         - "LLMs / Generative AI" implies: prompt engineering, RAG, fine-tuning, OpenAI/Gemini/Hugging Face APIs
+         - "Computer Vision" implies: OpenCV, image classification, object detection, CNNs
+         - "Data Science" implies: pandas, NumPy, matplotlib/seaborn, EDA, statistical analysis
+         - "Full-Stack Development" implies: frontend + backend + database + REST APIs
+         - "React" implies: JSX, hooks, component lifecycle, state management
+         - "Node.js" implies: Express.js, npm, event loop, async/await
+         - "Cloud (AWS/GCP/Azure)" implies: compute, storage, networking, IAM, serverless
+         - "DevOps" implies: Docker, CI/CD pipelines, infrastructure as code, monitoring
+         - "Agile" implies: Scrum, sprint planning, retrospectives, JIRA or equivalent
+         Apply similar transitive reasoning for ANY other domain.
+
+      3. SYNONYMS & PARAPHRASES. Treat these as equivalent:
+         - "Built" = "Developed" = "Engineered" = "Implemented" = "Created"
+         - "Led" = "Managed" = "Headed" = "Oversaw"
+         - "Proficient in" = "Experience with" = "Skilled in" = "Worked with"
+         - "Neural Network" = "Deep Learning Model"
+         - "Statistical Modelling" = "Predictive Modelling"
+         - "Version Control" = "Git" (if Git is listed, version control is covered)
+         - "Relational Database" = "SQL Database" (PostgreSQL, MySQL, SQLite all qualify)
+         - "NoSQL" = MongoDB / Redis / DynamoDB (any of these satisfy "NoSQL")
+
+      4. CONTEXT-AWARE INFERENCE. If the resume shows work that strongly implies a skill, credit it.
+         Example: A resume showing "built and deployed a recommendation engine" implies:
+         collaborative filtering, model deployment, and API integration — even if not stated verbatim.
+
+      5. DO NOT penalise missing jargon if the underlying competency is clearly demonstrated.
+
+      ═══════════════════════════════════════════════════
+      INPUTS
+      ═══════════════════════════════════════════════════
       Resume text:
       """
       ${resume}
@@ -51,25 +106,28 @@ export async function POST(request) {
       ${jobDescription}
       """
 
-      You MUST respond with ONLY a valid JSON object with the following schema:
+      ═══════════════════════════════════════════════════
+      OUTPUT FORMAT
+      ═══════════════════════════════════════════════════
+      You MUST respond with ONLY a valid JSON object (no markdown, no code fences) with this schema:
       {
-        "score": <number between 0-100 indicating overall match>,
-        "matchedSkills": [<array of key skills found in BOTH resume and JD>],
-        "missingSkills": [<array of crucial skills found in JD but MISSING or weak in resume>],
+        "score": <number 0-100 indicating overall semantic match>,
+        "matchedSkills": [<skills/concepts present in BOTH — use the JD's preferred terminology>],
+        "missingSkills": [<skills in JD genuinely absent from resume even after semantic reasoning>],
         "feedback": [
           {
-            "title": "<String: Short title of the feedback, e.g., 'Lack of Cloud Experience'>",
-            "description": "<String: Detailed explanation of the gap and why it matters for this role>"
+            "title": "<Short feedback title, e.g. 'Strong ML Foundation'>",
+            "description": "<Detailed explanation. Reference specific lines from the resume or JD where possible.>"
           }
         ],
         "actionPlan": [
-          "<String: Actionable step 1 to improve chances>",
-          "<String: Actionable step 2>",
-          "<String: Actionable step 3>"
+          "<Specific, actionable step 1 to close the most important gap>",
+          "<Specific, actionable step 2>",
+          "<Specific, actionable step 3>"
         ]
       }
-      
-      Make the feedback highly specific to the provided texts. Do not include markdown blocks like \`\`\`json. Just return the raw JSON string.
+
+      Make every field highly specific to the provided texts. Do not be generic.
     `;
 
     let lastError = null;
